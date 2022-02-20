@@ -51,27 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.lightGreenAccent,
         child: Wrap(
           children: [
-
             CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-
-
-
-            CryptoWidget(
-              alignmentStart: Alignment.center,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
                   color: Colors.yellowAccent,
                   borderRadius: BorderRadius.circular(15),
@@ -88,39 +72,77 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
+              animationType: "Triangle",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(105),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
                 ),
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Center(
                   child: Text(
-                    "ETH",
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w700,
@@ -130,24 +152,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
+
 
             CryptoWidget(
-              alignmentStart: Alignment.center,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
                   color: Colors.yellowAccent,
                   borderRadius: BorderRadius.circular(15),
@@ -164,99 +175,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
+              animationType: "Triangle",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Center(
-                  child: Text(
-                    "ETH",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Center(
-                  child: Text(
-                    "ETH",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-
-
-            CryptoWidget(
-              alignmentStart: Alignment.center,
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                    color: Colors.black45,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(1000),
-                      topLeft: Radius.circular(1000),
-                    )
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(105),
                 ),
                 child: Center(
                   child: Text(
@@ -270,39 +195,57 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Center(
                   child: Text(
-                    "ETH",
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w700,
@@ -312,24 +255,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
 
             CryptoWidget(
-              alignmentStart: Alignment.center,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
                   color: Colors.yellowAccent,
                   borderRadius: BorderRadius.circular(15),
@@ -346,122 +277,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
+              animationType: "Triangle",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Center(
-                  child: Text(
-                    "ETH",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Center(
-                  child: Text(
-                    "ETH",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-
-
-            CryptoWidget(
-              alignmentStart: Alignment.center,
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                    color: Colors.black45,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(1000),
-                      topLeft: Radius.circular(1000),
-                    )
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(105),
                 ),
                 child: Center(
                   child: Text(
@@ -475,39 +297,57 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.bottomRight,
-              child:
-              CustomPaint(size: Size(180, 180), painter: DrawTriangleShape()),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topRight,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Center(
                   child: Text(
-                    "ETH",
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w700,
@@ -517,24 +357,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
+
 
             CryptoWidget(
-              alignmentStart: Alignment.center,
+              animationType: "ReactDesc",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
                   color: Colors.yellowAccent,
                   borderRadius: BorderRadius.circular(15),
@@ -551,48 +380,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
-            ),
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://thumbs.dreamstime.com/b/handsome-man-hair-style-beard-beauty-face-portrait-fashion-male-model-black-hair-high-resolution-handsome-man-125031765.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-
-            CryptoWidget(
-              alignmentStart: Alignment.topLeft,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Image.network(
-                  "https://img.nrj.fr/yivPvar6VZ2iaxP_Amf7X_64m8k=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2019%2F03%2Fpicto-cherie-16_5c98e590268f5.jpg",
-                  width: 40,
-                  height: 40,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-
-
-            CryptoWidget(
-              alignmentStart: Alignment.center,
+              animationType: "Triangle",
               child: Container(
-                width: 40,
-                height: 40,
+                width: 35,
+                height: 35,
                 decoration: BoxDecoration(
-                    color: Colors.black45,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(1000),
-                      topLeft: Radius.circular(1000),
-                    )
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(105),
                 ),
                 child: Center(
                   child: Text(
@@ -606,10 +400,168 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             CryptoWidget(
-              alignmentStart: Alignment.bottomLeft,
-              child:
-              CustomPaint(size: Size(40, 40), painter: DrawTriangleShape(),),
+              animationType: "ReactDesc",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
             ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+
+            CryptoWidget(
+              animationType: "ReactDesc",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.yellowAccent,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "Triangle",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(105),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "ReactDesc",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            CryptoWidget(
+              animationType: "React",
+              child: Container(
+                width: 35,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    "BTC",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
           ],
         ),
       ),
@@ -618,10 +570,10 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class CryptoWidget extends StatefulWidget {
-  final Alignment alignmentStart;
   final Widget child;
+  final String animationType;
 
-  CryptoWidget({Key? key, required this.alignmentStart, required this.child})
+  CryptoWidget({Key? key, required this.child, required this.animationType})
       : super(key: key);
 
   @override
@@ -636,13 +588,142 @@ class _CryptoWidgetState extends State<CryptoWidget> {
     // TODO: implement initState
     super.initState();
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
-      setState(() => _alignment = widget.alignmentStart);
+      setState(() {
+        switch(widget.animationType){
+          case "Rhombus" : _alignment = Alignment.topCenter;
+          break;
+          case "React" : _alignment = Alignment.topRight;
+          break;
+          case "ReactDesc" : _alignment = Alignment.topLeft;
+          break;
+          case "Triangle": _alignment = Alignment.center;
+          break;
+          default : _alignment = Alignment.topCenter;
+          break;
+        }
+      });
+    });
+  }
+
+  void animationRhombus() {
+    Timer.periodic(new Duration(seconds: 4), (timer) {
+      switch (_alignment.toString()) {
+        case "Alignment.topCenter":
+          setState(() => _alignment = Alignment.centerLeft);
+          break;
+        case "Alignment.centerLeft":
+          setState(() => _alignment = Alignment.bottomCenter);
+          break;
+        case "Alignment.bottomCenter":
+          setState(() => _alignment = Alignment.centerRight);
+          break;
+        case "Alignment.centerRight":
+          setState(() => _alignment = Alignment.topCenter);
+          break;
+        default:
+          setState(() => _alignment = Alignment.topCenter);
+          break;
+      }
+    });
+  }
+
+  void animationReact() {
+    Timer.periodic(new Duration(seconds: 4), (timer) {
+      switch (_alignment.toString()) {
+        case "Alignment.topRight":
+          setState(() => _alignment = Alignment.bottomLeft);
+          break;
+        case "Alignment.bottomLeft":
+          setState(() => _alignment = Alignment.centerLeft);
+          break;
+        case "Alignment.centerLeft":
+          setState(() => _alignment = Alignment.centerRight);
+          break;
+        case "Alignment.centerRight":
+          setState(() => _alignment = Alignment.bottomRight);
+          break;
+        case "Alignment.bottomRight":
+          setState(() => _alignment = Alignment.topLeft);
+          break;
+        case "Alignment.topLeft":
+          setState(() => _alignment = Alignment.topCenter);
+          break;
+        case "Alignment.topCenter":
+          setState(() => _alignment = Alignment.bottomCenter);
+          break;
+        case "Alignment.bottomCenter":
+          setState(() => _alignment = Alignment.topRight);
+          break;
+        default:
+          setState(() => _alignment = Alignment.topRight);
+          break;
+      }
+    });
+  }
+
+  void animationReactDesc() {
+    Timer.periodic(new Duration(seconds: 4), (timer) {
+      switch (_alignment.toString()) {
+        case "Alignment.topLeft":
+          setState(() => _alignment = Alignment.bottomRight);
+          break;
+        case "Alignment.bottomRight":
+          setState(() => _alignment = Alignment.centerRight);
+          break;
+        case "Alignment.centerRight":
+          setState(() => _alignment = Alignment.centerLeft);
+          break;
+        case "Alignment.centerLeft":
+          setState(() => _alignment = Alignment.bottomLeft);
+          break;
+        case "Alignment.bottomLeft":
+          setState(() => _alignment = Alignment.topRight);
+          break;
+        case "Alignment.topRight":
+          setState(() => _alignment = Alignment.topCenter);
+          break;
+        case "Alignment.topCenter":
+          setState(() => _alignment = Alignment.bottomCenter);
+          break;
+        case "Alignment.bottomCenter":
+          setState(() => _alignment = Alignment.topLeft);
+          break;
+        default:
+          setState(() => _alignment = Alignment.topLeft);
+          break;
+      }
     });
   }
 
 
+
+  void animationTriangle() {
+    Timer.periodic(new Duration(seconds: 4), (timer) {
+      switch (_alignment.toString()) {
+        case "Alignment.center":
+          setState(() => _alignment = Alignment.centerRight);
+          break;
+        case "Alignment.centerRight":
+          setState(() => _alignment = Alignment.centerLeft);
+          break;
+        case "Alignment.centerLeft":
+          setState(() => _alignment = Alignment.topCenter);
+          break;
+        case "Alignment.topCenter":
+          setState(() => _alignment = Alignment.bottomCenter);
+          break;
+        case "Alignment.bottomCenter":
+          setState(() => _alignment = Alignment.center);
+          break;
+        default:
+          setState(() => _alignment = Alignment.topRight);
+          break;
+      }
+    });
+  }
+
   void animation() {
-    Timer.periodic(new Duration(seconds: 5), (timer) {
+    Timer.periodic(new Duration(seconds: 4), (timer) {
       debugPrint(timer.tick.toString());
       switch (_alignment.toString()) {
         case "Alignment.center":
@@ -665,15 +746,17 @@ class _CryptoWidgetState extends State<CryptoWidget> {
   }
 
   Widget _cryptoAnimation() {
-    animation();
+    if(widget.animationType == "Rhombus") animationRhombus();
+    else if (widget.animationType == "React") animationReact();
+    else if (widget.animationType == "ReactDesc") animationReactDesc();
+    else if (widget.animationType == "Triangle") animationTriangle();
+    else animation();
     return AnimatedContainer(
       width: 60,
       height: 60,
+      color: Colors.black12,
       alignment: _alignment,
-      duration: Duration(seconds: 4),
-      decoration: BoxDecoration(
-        color: Colors.transparent,
-      ),
+      duration: Duration(seconds: 3),
       child: widget.child,
     );
   }
